@@ -61,9 +61,12 @@
   <ItemGroup>
     <Compile Include="Assets\Security Systems\Free Version\Scripts\TabletInput.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\TabletDisplayController.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\KeyController.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\PlayerInputController.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\ObjectRotator.cs" />
+    <Compile Include="Assets\Apartment_Door\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerv2.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\FreebieCameraHookupScript.cs" />
