@@ -28,7 +28,7 @@
                     "name": "Look",
                     "type": "PassThrough",
                     "id": "cd60af78-8499-4f81-884c-2ac0c3f5f018",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Delta",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

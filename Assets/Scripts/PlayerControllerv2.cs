@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerControllerv2: MonoBehaviour
 {
     public CharacterController controller;
+    private Transform cameraTransform;
 
     [Header("Variables")]
     [SerializeField]
@@ -31,6 +32,7 @@ public class PlayerControllerv2: MonoBehaviour
     {
         controller = gameObject.GetComponent<CharacterController>();
         //inputManager = InputManager.Instance; didnt actually need
+        cameraTransform = Camera.main.transform;
     }
 
     private void OnEnable() //Enable the input actions
@@ -59,10 +61,12 @@ public class PlayerControllerv2: MonoBehaviour
         // Read input
         Vector2 input = moveAction.action.ReadValue<Vector2>();
         Vector3 move = new Vector3(input.x, 0, input.y);
+        move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
+        move.y = 0f; // Keep movement horizontal
         move = Vector3.ClampMagnitude(move, 1f);
 
-        if (move != Vector3.zero)
-            transform.forward = move;
+        /*if (move != Vector3.zero)
+            transform.forward = move;*/
 
         // Jump using WasPressedThisFrame()
         if (groundedPlayer && jumpAction.action.WasPressedThisFrame())
