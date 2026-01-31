@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 
@@ -8,7 +9,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Variable for setting camera
-    public Camera playerCamera;
+    public CinemachineFreeLook playerCamera;
 
     //Variables for speed and jumping
     public float walk = 6f;
