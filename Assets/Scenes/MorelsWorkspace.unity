@@ -333,10 +333,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 342296572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be361a801d4f45479db2fe79da644fc, type: 3}
+  m_Script: {fileID: 11500000, guid: ce1598e5f65fa6441b26f40c7e748b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prompt: Open door!
+  Prompt: Press E to interact
 --- !u!1 &1022196535
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,10 +454,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1022196535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be361a801d4f45479db2fe79da644fc, type: 3}
+  m_Script: {fileID: 11500000, guid: ce1598e5f65fa6441b26f40c7e748b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prompt: Pickup Item!
+  Prompt: Press E to interact
 --- !u!1 &1093040238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 577258802405621275, guid: 367db2099cc50144388cab70129740a9, type: 3}
@@ -701,25 +701,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 693102869434834739, guid: 367db2099cc50144388cab70129740a9, type: 3}
-      propertyPath: groundedPlayer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 867140478424166531, guid: 367db2099cc50144388cab70129740a9, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1466977448894879453, guid: 367db2099cc50144388cab70129740a9, type: 3}
-      propertyPath: m_ProvidesContacts
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
-      propertyPath: m_NotificationBehavior
-      value: 2
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionId
+      value: dfa22e74-5097-478f-91c1-0e22b66d0636
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 78bddadf-407a-439c-a5f0-55c3fb2ba816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: cd60af78-8499-4f81-884c-2ac0c3f5f018
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: c8a0d5cc-4d01-4fb8-87fc-d04f36e4a660
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 3d880075-da97-4267-9e7e-7955c2567a6e
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_ActionName
+      value: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: Player/Interact[/Keyboard/e]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Player/Look[/Mouse/delta]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: Player/Jump[/Keyboard/space]
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: Player/Unlock[/Keyboard/q]
       objectReference: {fileID: 0}
     - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
       propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
@@ -732,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 1554105285601338218, guid: 367db2099cc50144388cab70129740a9, type: 3}
       propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952965418332599785, guid: 367db2099cc50144388cab70129740a9, type: 3}
+      propertyPath: hasMask
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3840267336245795312, guid: 367db2099cc50144388cab70129740a9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -850,6 +886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DOOR
       objectReference: {fileID: 0}
+    - target: {fileID: 4570109881455851173, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4876304295785658149, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -868,19 +908,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99785143
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.06551769
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -888,7 +928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -7.513
       objectReference: {fileID: 0}
     - target: {fileID: 9081889558594435909, guid: 4b8c4016a5ef8ec4aa3787f15ab451f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

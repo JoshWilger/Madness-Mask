@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class InteractDoor : MonoBehaviour
 {
-    private Animation doorAnim;
+    public Animator animator;
+    private string openAnim, closeAnim, defaultAnim;
     enum DoorState
     {
         Closed,
@@ -16,8 +17,11 @@ public class InteractDoor : MonoBehaviour
 
     private void Start()
     {
-        doorAnim = GetComponent<Animation>();
+        animator = this.GetComponent<Animator>();
         doorState = DoorState.Closed;
+        openAnim = "DoorOpen";
+        closeAnim = "DoorClose";
+        defaultAnim = "Default";
     }
 
     public string DoorTest(Inventory inv, string prompt)
@@ -35,25 +39,26 @@ public class InteractDoor : MonoBehaviour
         else if (doorState == DoorState.Closed && !inv.hasMask)
         {
             LockedDoor(prompt);
-
         }
         return prompt;
     }
 
     public void OpenDoor()
     {
-        if (!doorAnim.isPlaying)
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(closeAnim) || animator.GetCurrentAnimatorStateInfo(0).IsName(defaultAnim))
         {
-            doorAnim.Play("Door_Open");
+            animator.ResetTrigger("Close");
+            animator.SetTrigger("Open");
             doorState = DoorState.Opened;
         }
     }
 
     public void CloseDoor()
     {
-        if (!doorAnim.isPlaying)
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(openAnim) || animator.GetCurrentAnimatorStateInfo(0).IsName(defaultAnim))
         {
-            doorAnim.Play("Door_Close");
+            animator.ResetTrigger("Open");
+            animator.SetTrigger("Close");
             doorState = DoorState.Closed;
         }
     }
