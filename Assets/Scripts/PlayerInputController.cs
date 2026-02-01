@@ -115,7 +115,7 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
                     ""type"": ""PassThrough"",
                     ""id"": ""cd60af78-8499-4f81-884c-2ac0c3f5f018"",
                     ""expectedControlType"": ""Delta"",
-                    ""processors"": """",
+                    ""processors"": ""DeltaTimeScale,ScaleVector2(x=0.01,y=0.01)"",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
