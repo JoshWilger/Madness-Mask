@@ -127,6 +127,15 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Unlock"",
+                    ""type"": ""Button"",
+                    ""id"": ""3d880075-da97-4267-9e7e-7955c2567a6e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -217,6 +226,17 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c47f46c-9979-47b8-8489-0465a01e142a"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Unlock"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -229,6 +249,7 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_Unlock = m_Player.FindAction("Unlock", throwIfNotFound: true);
     }
 
     ~@PlayerInputController()
@@ -313,6 +334,7 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_Unlock;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -340,6 +362,10 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
         /// Provides access to the underlying input action "Player/Jump".
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Unlock".
+        /// </summary>
+        public InputAction @Unlock => m_Wrapper.m_Player_Unlock;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -378,6 +404,9 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Unlock.started += instance.OnUnlock;
+            @Unlock.performed += instance.OnUnlock;
+            @Unlock.canceled += instance.OnUnlock;
         }
 
         /// <summary>
@@ -401,6 +430,9 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Unlock.started -= instance.OnUnlock;
+            @Unlock.performed -= instance.OnUnlock;
+            @Unlock.canceled -= instance.OnUnlock;
         }
 
         /// <summary>
@@ -469,5 +501,12 @@ public partial class @PlayerInputController: IInputActionCollection2, IDisposabl
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Unlock" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUnlock(InputAction.CallbackContext context);
     }
 }

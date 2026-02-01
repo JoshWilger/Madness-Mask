@@ -11,7 +11,7 @@ public class Interactor : MonoBehaviour
 
     private readonly Collider[] collidersBuffer = new Collider[10];
 
-    //public InputActionReference interactAction;
+    public InputActionReference interactAction;
 
     [SerializeField] private int numCol;
 
@@ -25,7 +25,7 @@ public class Interactor : MonoBehaviour
 
             if (interactable != null)
             {
-                if (Keyboard.current.eKey.wasPressedThisFrame)
+                if (interactAction.action.WasPerformedThisFrame())
                 {
                     interactable.Interact(this);
                 }
