@@ -509,6 +509,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 991200249}
     - target: {fileID: 6035561892495358207, guid: c8c3de983d34ef549bc117ba409a8254, type: 3}
+      propertyPath: transitionText
+      value: "Experiment in progress.\r\n\u201CTo do when Subject #1 wakes up:\r\n*
+        Wish Subject #1 good morning through the intercomm\r\n* Remind Subject #1
+        that the system will terminate them every three minutes if they don\u2019t
+        find a new mask each Cycle\r\n\r\nI figured I\u2019d leave the mad scientist\u2019s
+        notes scattered all around. Let Subject #1 see the madness that brought us
+        here.\r\n\n\n\nThe initial masks seem to be highly affective at overcoming
+        the insubordinate natural tendencies of the failures of the subject. There
+        may need to be further testing to investigate other positive outcomes of
+        these neurological anomalies."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035561892495358207, guid: c8c3de983d34ef549bc117ba409a8254, type: 3}
       propertyPath: transitionAnimator
       value: 
       objectReference: {fileID: 1810878407}
@@ -3029,6 +3041,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 991200249}
     - target: {fileID: 7059839949379630073, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
+      propertyPath: transitionText
+      value: "A part of me will never understand it. People never appreciate true
+        Visionaries. As such, betrayal has always been a fundamental part of life.
+        Their boundaries follow the edges of that ONE piece of the puzzle their idiotic
+        minds can comprehend. But once these masks are complete, once their power
+        is mine\u2026 I will have my revenge on the people who thought they knew
+        better than me"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059839949379630073, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
       propertyPath: transitionAnimator
       value: 
       objectReference: {fileID: 1810878407}
@@ -3049,12 +3070,20 @@ PrefabInstance:
     - {fileID: 1531749373926201175, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
     - {fileID: 6564773448038686101, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
     - {fileID: 2908869426848245456, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3178621926439030536, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1356045073}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4029646922661674438, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1955384638}
   m_SourcePrefab: {fileID: 100100000, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
+--- !u!4 &531295310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3178621926439030536, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
+  m_PrefabInstance: {fileID: 531295309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &547784561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8359,6 +8388,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8096734104226932489, guid: 9733e4fa88518774b8a9132505e18863, type: 3}
   m_PrefabInstance: {fileID: 1352145414}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1356045072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 531295310}
+    m_Modifications:
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002260327422387615, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 2002260327422387615, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996158525280087652, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996158525280087652, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996158525280087652, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_Size.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115590687382098113, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: m_Name
+      value: Interactable Sticky Note (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461701317396224710, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: textUi
+      value: 
+      objectReference: {fileID: 991200249}
+    - target: {fileID: 5461701317396224710, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: transitionText
+      value: Tread lightly, you gatekeepers of shallow boxes. I will shatter your
+        illusions, and the world will see you for what you are
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461701317396224710, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: transitionAnimator
+      value: 
+      objectReference: {fileID: 1810878407}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+--- !u!4 &1356045073 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+  m_PrefabInstance: {fileID: 1356045072}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1357864135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11752,7 +11876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.78
+      value: 21.4
       objectReference: {fileID: 0}
     - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11760,7 +11884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.23
+      value: 10.821
       objectReference: {fileID: 0}
     - target: {fileID: 1924056639692489069, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11818,6 +11942,10 @@ PrefabInstance:
       propertyPath: textUi
       value: 
       objectReference: {fileID: 991200249}
+    - target: {fileID: 5461701317396224710, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
+      propertyPath: transitionText
+      value: Subject #1 primed for Mask Integration and testing
+      objectReference: {fileID: 0}
     - target: {fileID: 5461701317396224710, guid: ed2ee93dcaf225244a13e6cd66c54b24, type: 3}
       propertyPath: transitionAnimator
       value: 
@@ -13565,6 +13693,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 991200249}
     - target: {fileID: 2602622179177544256, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
+      propertyPath: transitionText
+      value: "Hey! Subject #1! Don\u2019t have any memories of who you are? Good."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2602622179177544256, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
       propertyPath: transitionAnimator
       value: 
       objectReference: {fileID: 1810878407}
@@ -13586,7 +13718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459479933391675883, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.984
+      value: 18.628
       objectReference: {fileID: 0}
     - target: {fileID: 8459479933391675883, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13594,7 +13726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459479933391675883, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.285
+      value: 9.895
       objectReference: {fileID: 0}
     - target: {fileID: 8459479933391675883, guid: 8032ce7eaba3b5c4b879608980d8d085, type: 3}
       propertyPath: m_LocalRotation.w
