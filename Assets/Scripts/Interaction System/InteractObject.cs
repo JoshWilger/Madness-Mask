@@ -14,7 +14,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     //public string DisplayName => displayName;
 
-    public bool Interact(Interactor interactor)
+    public virtual bool Interact(Interactor interactor)
     {
         Debug.Log(message:"Interact with " + gameObject.name);
 
