@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9b73fd9e-8fff-462f-a251-5efe88904f2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Madness-Mask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Madness-Mask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Locker_HQ/Prefabs/locker_clean_a.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Locker_HQ/Prefabs/locker_clean_a.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Day 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Day 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769919306492</updated>
       <workItem from="1769919309108" duration="11275000" />
-      <workItem from="1769972817884" duration="3425000" />
+      <workItem from="1769972817884" duration="5798000" />
     </task>
     <servers />
   </component>
