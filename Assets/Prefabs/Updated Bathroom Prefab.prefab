@@ -977,7 +977,8 @@ PrefabInstance:
       value: Bathroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3303075307573383867, guid: 7f701c625b2caa94ab25c97dab9da3ea, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2197688844438233211, guid: 7f701c625b2caa94ab25c97dab9da3ea, type: 3}
       insertIndex: -1
