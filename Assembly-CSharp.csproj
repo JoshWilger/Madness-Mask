@@ -67,8 +67,8 @@
     <Compile Include="Assets\Scripts\Interaction System\Interactables\InteractableInventoryChecker.cs" />
     <Compile Include="Assets\Scripts\Interaction System\Interactor.cs" />
     <Compile Include="Assets\Scripts\DeltaTimeScaleProcessor.cs" />
-    <Compile Include="Assets\Scripts\Interaction System\Interactables\InteractObject.cs" />
     <Compile Include="Assets\Scripts\Interaction System\Interactables\InteractableInventoriedItem.cs" />
+    <Compile Include="Assets\Scripts\Interaction System\Interactables\InteractObject.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Metal_Grids_Textures\Scripts\CameraFreeflight.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\FreebieCameraHookupScript.cs" />

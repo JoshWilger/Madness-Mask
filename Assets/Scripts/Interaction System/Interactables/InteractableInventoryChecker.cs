@@ -26,10 +26,12 @@ namespace Interaction_System.Interactables
                 {
                     if (interactableToEnable != null)
                         interactableToEnable.enabled = true;
-                    
+
                     if (transitionAnimator != null && transitionAnimationClip != null)
                         transitionAnimator.Play(transitionAnimationClip.name);
-                    textUi.SetText("Success!");
+                    else
+                        gameObject.SetActive(false);
+                    // textUi.SetText("Success!");
                 }
                 else
                 {
