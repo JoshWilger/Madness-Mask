@@ -65,6 +65,9 @@
     <Compile Include="Assets\Scripts\Interaction System\KeyDetector.cs" />
     <Compile Include="Assets\ChainPack\Chain2D\scripts\ChainController.cs" />
     <Compile Include="Assets\Lockers\Scripts\CameraFreeflight.cs" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <Compile Include="Assets\Security Systems\Free Version\Scripts\TabletInput.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\TabletDisplayController.cs" />
@@ -122,7 +125,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <None Include="Assets\Locker_HQ\install_RP_Versions.txt" />
+=======
+    <None Include="Assets\Lockers\install_RP_Versions.txt" />
+>>>>>>> Stashed changes
 =======
     <None Include="Assets\Lockers\install_RP_Versions.txt" />
 >>>>>>> Stashed changes
