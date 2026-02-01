@@ -8,12 +8,15 @@ public class Interactor : MonoBehaviour
     [SerializeField] private Transform interactionPoint;
     [SerializeField] private float interactionRange = 5f;
     [SerializeField] private LayerMask interactableLayerMask;
+    [SerializeField] private UIPromptInteract _interactionPromptUi;
 
     private readonly Collider[] collidersBuffer = new Collider[10];
 
     public InputActionReference interactAction;
 
     [SerializeField] private int numCol;
+    
+    private IInteractable _interactable;
 
     private void Update()
     {
@@ -21,14 +24,29 @@ public class Interactor : MonoBehaviour
 
         if (numCol > 0)
         {
-            var interactable = collidersBuffer[0].GetComponent<IInteractable>();
+            _interactable = collidersBuffer[0].GetComponent<IInteractable>();
 
-            if (interactable != null)
+            if (_interactable != null)
             {
+                if (!_interactionPromptUi.IsDisplayed)
+                    _interactionPromptUi.SetUp(_interactable.InteractionPrompt);
+                
                 if (interactAction.action.WasPerformedThisFrame())
                 {
-                    interactable.Interact(this);
+                    _interactable.Interact(this);
                 }
+            }
+        }
+        else
+        {
+            if (_interactable != null)
+            {
+                _interactable = null;
+            }
+
+            if (_interactionPromptUi.IsDisplayed)
+            {
+                _interactionPromptUi.Close();
             }
         }
     }

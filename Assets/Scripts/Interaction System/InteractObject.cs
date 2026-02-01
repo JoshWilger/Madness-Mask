@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -16,7 +15,7 @@ public class InteractObject : MonoBehaviour, IInteractable
 
     public string InteractionPrompt => Prompt;
 
-    public bool Interact(Interactor interactor)
+    public virtual bool Interact(Interactor interactor)
     {
         Debug.Log(message:"Interact with " + gameObject.name);
 
@@ -59,6 +58,4 @@ public class InteractObject : MonoBehaviour, IInteractable
 
         return true;
     }
-
-
 }

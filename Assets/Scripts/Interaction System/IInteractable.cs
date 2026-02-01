@@ -10,8 +10,8 @@ public interface IInteractable
 
     //bool CanInteract();
 
-    //void OnFocusGained();
-    //void OnFocusLost();
+    // void OnFocusGained();
+    // void OnFocusLost();
     public bool Interact(Interactor interactor);
 
 }
