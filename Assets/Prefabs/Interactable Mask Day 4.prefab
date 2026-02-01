@@ -53,8 +53,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.37585098, y: 0.5090453, z: 0.48085058}
+  m_Center: {x: -0.06653729, y: -0.10159394, z: 0.2595747}
 --- !u!114 &70040930497937391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,10 +68,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prompt: The Mask Yearns For Your Face (Press E to put on)
-  redDoor: 0
-  redKey: 0
   inv: {fileID: 0}
-  sceneName: 
+  transitionText: 
+  transitionAnimator: {fileID: 0}
+  textUi: {fileID: 0}
 --- !u!1001 &5364914244304353571
 PrefabInstance:
   m_ObjectHideFlags: 0

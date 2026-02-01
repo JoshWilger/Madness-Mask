@@ -28,8 +28,11 @@ public class Interactor : MonoBehaviour
 
             if (_interactable != null)
             {
-                if (!_interactionPromptUi.IsDisplayed)
+                if (!_interactionPromptUi.IsDisplayed && _interactable is InteractObject { isActiveAndEnabled: true })
+                {
                     _interactionPromptUi.SetUp(_interactable.InteractionPrompt);
+                }
+                    
                 
                 if (interactAction.action.WasPerformedThisFrame())
                 {

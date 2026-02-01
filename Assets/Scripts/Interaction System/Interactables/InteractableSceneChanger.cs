@@ -14,6 +14,9 @@ namespace Interaction_System.Interactables
         
         public override bool Interact(Interactor interactor)
         {
+            if (!enabled)
+                return false;
+            
             if (interactedTime == null)
             {
                 interactedTime = Time.time;
