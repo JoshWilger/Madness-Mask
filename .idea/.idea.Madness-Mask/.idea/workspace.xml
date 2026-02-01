@@ -26,13 +26,19 @@
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/InteractObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/UnityProjects/Madness-Mask/Assets/Scripts/Interaction System/InteractObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/Interactables/InteractableSceneChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/Interactables/InteractableTextChanger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/Interactor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction System/UIPromptInteract.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://InteractableSceneChanger.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -109,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769919306492</updated>
-      <workItem from="1769919309108" duration="8347000" />
+      <workItem from="1769919309108" duration="11275000" />
     </task>
     <servers />
   </component>
