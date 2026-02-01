@@ -3084,6 +3084,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 991200249}
     - target: {fileID: 7059839949379630073, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
+      propertyPath: transitionText
+      value: "A part of me will never understand it. People never appreciate true
+        Visionaries. As such, betrayal has always been a fundamental part of life.
+        Their boundaries follow the edges of that ONE piece of the puzzle their idiotic
+        minds can comprehend. But once these masks are complete, once their power
+        is mine\u2026 I will have my revenge on the people who thought they knew
+        better than me"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059839949379630073, guid: 7c369db247b91d84fb5b34424ec3b41b, type: 3}
       propertyPath: transitionAnimator
       value: 
       objectReference: {fileID: 1810878407}
