@@ -2375,6 +2375,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 991200249}
     - target: {fileID: 1520913238398013897, guid: 2f8152d72a93d364a9ead3700520fd8f, type: 3}
+      propertyPath: transitionText
+      value: ' In these masks are the power to deactivate their security systems
+        and take away their memories. I will take from them what they took from me.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520913238398013897, guid: 2f8152d72a93d364a9ead3700520fd8f, type: 3}
       propertyPath: transitionAnimator
       value: 
       objectReference: {fileID: 1810878407}
@@ -2386,6 +2391,11 @@ PrefabInstance:
       propertyPath: textUi
       value: 
       objectReference: {fileID: 991200249}
+    - target: {fileID: 4260891091869025041, guid: 2f8152d72a93d364a9ead3700520fd8f, type: 3}
+      propertyPath: transitionText
+      value: I once had it all. Wealth, power, family, influence. They took it from
+        me.
+      objectReference: {fileID: 0}
     - target: {fileID: 4260891091869025041, guid: 2f8152d72a93d364a9ead3700520fd8f, type: 3}
       propertyPath: transitionAnimator
       value: 
