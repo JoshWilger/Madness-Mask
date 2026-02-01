@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\PlayerControllerv2.cs" />
     <Compile Include="Assets\Scripts\Interaction System\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Interaction System\Interactor.cs" />
+    <Compile Include="Assets\Scripts\DeltaTimeScaleProcessor.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Security Systems\Free Version\Scripts\FreebieCameraHookupScript.cs" />
   </ItemGroup>
