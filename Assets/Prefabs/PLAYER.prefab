@@ -75,7 +75,7 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_MaxSpeed: 100
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -672,8 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c89c0d4fb7dcae46988f5351d455dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasKey: 0
-  unlockAction: {fileID: -1687635443458032205, guid: 9d2142ba49b019645b1733438920783f, type: 3}
+  HasRedKey: 0
 --- !u!23 &6143454990756205829
 MeshRenderer:
   m_ObjectHideFlags: 0
