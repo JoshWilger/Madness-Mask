@@ -17,6 +17,20 @@ public class InteractObject : MonoBehaviour, IInteractable
     public bool Interact(Interactor interactor)
     {
         Debug.Log(message:"Interact with " + gameObject.name);
+
+        var inventory = interactor.GetComponent<Inventory>();
+
+        if (inventory == null) return false;
+
+        if (inventory.HasKey) {
+            Debug.Log(message: "You used the key to interact with " + gameObject.name);
+        }
+        else
+        {
+            Debug.Log(message: "You need a key to interact with " + gameObject.name);
+            return false;
+        }
+
         return true;
     }
 
