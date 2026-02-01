@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JoshWorld.unity
     guid: 26db76476137c43458219ed0bbd57b72
   - enabled: 1
