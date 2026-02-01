@@ -5,5 +5,6 @@ using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
-    public bool HasRedKey = false;
+    [SerializeField] public bool hasKey = false;
+    [SerializeField] public bool hasMask = false;
 }
